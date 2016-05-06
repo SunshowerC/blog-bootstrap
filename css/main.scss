@@ -54,7 +54,7 @@ a:hover {
 
 @include keyframes('shining') {
 	0% { text-shadow: 0 0 1px #fff; }
-	80% { text-shadow: 0 0 50px #fff; }
+	50% { text-shadow: 0 0 50px #fff; }
 	100% { text-shadow: 0 0 1px #fff; }
 }
 
