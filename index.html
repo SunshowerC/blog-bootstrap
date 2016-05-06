@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>微语的博客</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/mainCompressed.css">
+</head>
+<body>
+	<header>
+		<h1 class="title">微语博客</h1>
+		<h2>见习前端攻城狮</h2>
+		<canvas id="bubbleCanvas" width="300" height="130">你的浏览器版本过低</canvas>
+		<nav>
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#">首 页</a></li>
+				<li><a href="#">个人简介</a></li>
+				<li><a href="#">文 章</a></li>
+				<li><a href="#">项目作品</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="main-content container">
+
+		<div class='article col-md-9'>
+			<div class="recommend">
+				<h1>推荐阅读</h1>
+				<h2>共3篇文章</h2>
+			</div>
+
+			<article class="panel panel-default">
+				<div class="panel-heading">
+					<h1><a href='#'>常用Git命令</a></h1>
+					<h2>作者：微语  <time> 2016-05-05</time></h2>		
+					
+				</div>
+				<div class="panel-body">
+					<img src="img/img-01.jpg" alt="">
+					<p class="description">安全，是个重要但是容易被忽视的问题。以前写过一个简易的论坛，自以为没问题，但还是被发现有 xss 漏洞和 SQL 注入漏洞。</p>
+				</div>
+				<div class="panel-footer">分类：<a href="#">CSS</a></div>
+			</article>
+
+			<article class="panel panel-default">
+				<div class="panel-heading">
+					<h1><a href='#'>常用Git命令</a></h1>
+					<h2>作者：微语  <time>2016-05-05</time></h2>		
+					
+				</div>
+				<div class="panel-body">
+					<img src="img/img-02.jpg" alt="">
+					<p class="description">看了几部‘唯美’的动画电影（只能这样形容了吧），感触还是比较深的。美好、期盼与现实都在里面，这便是所谓的命运吧。</p>
+				</div>
+				<div class="panel-footer">分类：<a href="#">CSS</a></div>
+			</article>
+
+			<article class="panel panel-default">
+				<div class="panel-heading">
+					<h1><a href='#'>常用Git命令</a></h1>
+					<h2>作者：微语  <time>2016-05-05</time></h2>		
+					
+				</div>
+				<div class="panel-body">
+					<img src="img/img-03.png" alt="">
+					<p class="description">CodeIgniter ，它没有自己的模板引擎，但是CI作为一个比较灵活的框架，自定义模板也是很方便的。</p>
+				</div>
+				<div class="panel-footer">分类：<a href="#">CSS</a></div>
+			</article>			
+
+		</div>
+
+		<div class="sidebar col-md-3">
+			<div class="sidebar-content">
+				<div class="head">
+					<div class="avatar">
+						<div>
+							<img src="img/640.png" alt="">
+						</div>
+					</div>
+					<h2>微语</h2>
+					<ul class="status">
+						<li >21<br>文 章</li><li >3<br>精 选</li><li >9<br>分 类</li>
+					</ul>
+				</div>
+
+				<div class="classify">
+					<h2 >分类</h2>
+
+					<ul class="nav nav-pills nav-stacked" >
+						<li class="active"><a href="#">推荐<span class="badge  pull-right">42</span></a></li>
+						<li><a href="#">CSS<span class="badge  pull-right">12</span></a></li>
+						<li><a href="#">JavaScript<span class="badge  pull-right">7</span></a></li>
+						<li><a href="#">JQuery<span class="badge  pull-right">5</span></a></li>
+						<li><a href="#">Bootstrap<span class="badge  pull-right">2</span></a></li>
+						<li><a href="#">Node.js<span class="badge  pull-right">3</span></a></li>
+					</ul>
+				</div>
+				
+			</div>			
+		</div>	
+	
+	</div>
+
+	<footer>
+		<div class="container">
+			<b class="logo">WEIYU BLOG</b>
+			<p class="slogan">Less is More.</p>
+		</div> 
+	 	<div class="copyright">
+			 © 2016 Weiyu
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/bubble.js"></script>
+</body>
+</html>
