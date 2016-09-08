@@ -1,122 +1,188 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>微语的博客</title>
-	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/mainCompressed.css">
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->  	
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>微语的博客</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mainCompressed.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .navbar-default.blog-nav {
+            background-color: transparent;
+            border: none;
+            min-height: auto;
+        }
+
+        .blog-nav .navbar-collapse {
+            margin:0;
+
+        }
+
+        .blog-nav ul.nav {
+            display: inline-block;
+            float: none;
+        }
+        .blog-nav ul.nav li a {
+            color: #fff;
+        }
+        .blog-nav button {
+            float: none;
+
+        }
+
+        .blog-nav button:hover,.blog-nav button:focus {
+            background-color: #39e!important;
+
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #fff;
+            border-color: #fff;
+        }
+
+        .blog-nav ul.nav li.active a, .blog-nav ul.nav li a:hover {
+            background-color: #39e;
+            color: #fff;
+        }
+
+        .blog-nav .navbar-collapse {
+            border: none;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1 class="title">微语博客</h1>
-		<h2>见习前端攻城狮</h2>
-		<canvas id="bubbleCanvas" width="300" height="130">你的浏览器版本过低</canvas>
-		<nav>
-			<ul class="nav nav-pills">
-				<li class="active"><a href="#">首 页</a></li>
-				<li><a href="#">个人简介</a></li>
-				<li><a href="#">文 章</a></li>
-				<li><a href="#">项目作品</a></li>
-			</ul>
-		</nav>
-	</header>
+<header>
+    <h1 class="title">微语博客</h1>
+    <h2>见习前端攻城狮</h2>
+    <canvas id="bubbleCanvas" width="300" height="130">你的浏览器版本过低</canvas>
+    <div class="navbar navbar-default blog-nav" role="navigation">
+        <div class="navbar-header">
+            　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+            <!-- <a href="##" class="navbar-brand">慕课网</a> -->
+        </div>
+        <nav class="collapse navbar-collapse navbar-responsive">
+            <ul class=" nav navbar-nav">  <!--nav nav-pills -->
+                <li class="active"><a href="#">首 页</a></li>
+                <li><a href="#">个人简介</a></li>
+                <li><a href="#">文 章</a></li>
+                <li><a href="#">项目作品</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-	<div class="main-content container">
+<div class="main-content container">
 
-		<div class='article col-md-9'>
-			<div class="recommend">
-				<h1>推荐阅读</h1>
-				<h2>共3篇文章</h2>
-			</div>
+    <div class='article col-md-9'>
+        <div class="recommend">
+            <h1>推荐阅读</h1>
+            <h2>共3篇文章</h2>
+        </div>
 
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h1><a href='#'>常见Web安全漏洞</a></h1>
-					<h2>作者：微语  <time> 2016-05-05</time></h2>		
-					
-				</div>
-				<div class="panel-body">
-					<img src="img/img-01.jpg" alt="">
-					<p class="description">安全，是个重要但是容易被忽视的问题。以前写过一个简易的论坛，自以为没问题，但还是被发现有 xss 漏洞和 SQL 注入漏洞。</p>
-				</div>
-				<div class="panel-footer">分类：<a href="#">SQL</a></div>
-			</article>
+        <article class="panel panel-default">
+            <div class="panel-heading">
+                <h1><a href='#'>常见Web安全漏洞</a></h1>
+                <h2>作者：微语
+                    <time> 2016-05-05</time>
+                </h2>
 
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h1><a href='#'>电影赏析</a></h1>
-					<h2>作者：微语  <time>2016-05-05</time></h2>		
-					
-				</div>
-				<div class="panel-body">
-					<img src="img/img-02.jpg" alt="">
-					<p class="description">看了几部‘唯美’的动画电影（只能这样形容了吧），感触还是比较深的。美好、期盼与现实都在里面，这便是所谓的命运吧。</p>
-				</div>
-				<div class="panel-footer">分类：<a href="#">Movie</a></div>
-			</article>
+            </div>
+            <div class="panel-body">
+                <img src="img/img-01.jpg" alt="">
+                <p class="description">安全，是个重要但是容易被忽视的问题。以前写过一个简易的论坛，自以为没问题，但还是被发现有 xss 漏洞和 SQL 注入漏洞。</p>
+            </div>
+            <div class="panel-footer">分类：<a href="#">SQL</a></div>
+        </article>
 
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h1><a href='#'>@keyframe动画的基本用法</a></h1>
-					<h2>作者：微语  <time>2016-05-05</time></h2>		
-					
-				</div>
-				<div class="panel-body">
-					<img src="img/img-03.png" alt="">
-					<p class="description">随着CSS3的推出与普及，其各种属性开始被广泛使用。尤其是其动画功能，对于一些简单的动画实现，实在没必要用JavaScript去实现，这时@keyframes动画就派上了用场。</p>
-				</div>
-				<div class="panel-footer">分类：<a href="#">CSS</a></div>
-			</article>			
+        <article class="panel panel-default">
+            <div class="panel-heading">
+                <h1><a href='#'>电影赏析</a></h1>
+                <h2>作者：微语
+                    <time>2016-05-05</time>
+                </h2>
 
-		</div>
+            </div>
+            <div class="panel-body">
+                <img src="img/img-02.jpg" alt="">
+                <p class="description">看了几部‘唯美’的动画电影（只能这样形容了吧），感触还是比较深的。美好、期盼与现实都在里面，这便是所谓的命运吧。</p>
+            </div>
+            <div class="panel-footer">分类：<a href="#">Movie</a></div>
+        </article>
 
-		<div class="sidebar col-md-3">
-			<div class="sidebar-content">
-				<div class="head">
-					<div class="avatar">
-						<div>
-							<img src="img/640.png" alt="头像">
-						</div>
-					</div>
-					<h2>微语</h2>
-					<ul class="status">
-						<li >21<br>文 章</li><li >3<br>精 选</li><li >9<br>分 类</li>
-					</ul>
-				</div>
+        <article class="panel panel-default">
+            <div class="panel-heading">
+                <h1><a href='#'>@keyframe动画的基本用法</a></h1>
+                <h2>作者：微语
+                    <time>2016-05-05</time>
+                </h2>
 
-				<div class="classify">
-					<h2 >分类</h2>
+            </div>
+            <div class="panel-body">
+                <img src="img/img-03.png" alt="">
+                <p class="description">
+                    随着CSS3的推出与普及，其各种属性开始被广泛使用。尤其是其动画功能，对于一些简单的动画实现，实在没必要用JavaScript去实现，这时@keyframes动画就派上了用场。</p>
+            </div>
+            <div class="panel-footer">分类：<a href="#">CSS</a></div>
+        </article>
 
-					<ul class="nav nav-pills nav-stacked" >
-						<li class="active"><a href="#">推荐<span class="badge  pull-right">42</span></a></li>
-						<li><a href="#">CSS<span class="badge  pull-right">12</span></a></li>
-						<li><a href="#">JavaScript<span class="badge  pull-right">7</span></a></li>
-						<li><a href="#">JQuery<span class="badge  pull-right">5</span></a></li>
-						<li><a href="#">Bootstrap<span class="badge  pull-right">2</span></a></li>
-						<li><a href="#">Node.js<span class="badge  pull-right">3</span></a></li>
-					</ul>
-				</div>
-				
-			</div>			
-		</div>	
-	
-	</div>
+    </div>
 
-	<footer>
-		<div class="container">
-			<b class="logo">WEIYU BLOG</b>
-			<p class="slogan">Less is More.</p>
-		</div> 
-	 	<div class="copyright">
-			 © 2016 Weiyu
-		</div>
-	</footer>
-	<script type="text/javascript" src="js/bubble.js"></script>
+    <div class="sidebar col-md-3">
+        <div class="sidebar-content">
+            <div class="head">
+                <div class="avatar">
+                    <div>
+                        <img src="img/640.png" alt="头像">
+                    </div>
+                </div>
+                <h2>微语</h2>
+                <ul class="status">
+                    <li>21<br>文 章</li>
+                    <li>3<br>精 选</li>
+                    <li>9<br>分 类</li>
+                </ul>
+            </div>
+
+            <div class="classify">
+                <h2>分类</h2>
+
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">推荐<span class="badge  pull-right">42</span></a></li>
+                    <li><a href="#">CSS<span class="badge  pull-right">12</span></a></li>
+                    <li><a href="#">JavaScript<span class="badge  pull-right">7</span></a></li>
+                    <li><a href="#">JQuery<span class="badge  pull-right">5</span></a></li>
+                    <li><a href="#">Bootstrap<span class="badge  pull-right">2</span></a></li>
+                    <li><a href="#">Node.js<span class="badge  pull-right">3</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <b class="logo">WEIYU BLOG</b>
+        <p class="slogan">Less is More.</p>
+    </div>
+    <div class="copyright">
+        © 2016 Weiyu
+    </div>
+</footer>
+<script type="text/javascript" src="js/bubble.js"></script>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </body>
 </html>
